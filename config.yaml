@@ -1,0 +1,4 @@
+config:
+  pcd_path: ../misc/data_1.pcd
+  verbose: true
+
