@@ -13,5 +13,7 @@ find_package(PkgConfig)
 pkg_check_modules(YAMLCPP REQUIRED yaml-cpp>=0.5)
 include_directories(${YAMLCPP_INCLUDE_DIRS})
 
+add_library(patchworkpp include/patchworkpp.cpp)
+
 add_executable (main main.cpp)
-target_link_libraries (main ${PCL_LIBRARIES} ${YAMLCPP_LIBRARIES})
+target_link_libraries (main ${PCL_LIBRARIES} ${YAMLCPP_LIBRARIES} patchworkpp)

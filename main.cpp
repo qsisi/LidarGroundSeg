@@ -4,7 +4,6 @@
 #include <pcl/point_types.h>
 #include <yaml-cpp/yaml.h>
 #include "include/patchworkpp.h"
-#include "include/patchworkpp.cpp"
 
 void patchworkFilter(const pcl::PointCloud<pcl::PointXYZI>::Ptr &cloud_in,
 					 pcl::PointCloud<pcl::PointXYZI>::Ptr &cloud_out_ground,
